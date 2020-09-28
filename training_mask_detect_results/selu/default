@@ -1,0 +1,43 @@
+headModel = MaxPooling2D(pool_size=(5, 5))(headModel)
+headModel = Flatten(name="flatten")(headModel)
+headModel = Dense(128, activation="selu")(headModel)
+headModel = Dense(2, activation="softmax")(headModel)
+
+
+Epoch 1/10
+32/32 [==============================] - 606s 19s/step - loss: 1.0039 - accuracy: 0.6867 - val_loss: 0.8230 - val_accuracy: 0.7686
+Epoch 2/10
+32/32 [==============================] - 594s 19s/step - loss: 0.4809 - accuracy: 0.8325 - val_loss: 0.3477 - val_accuracy: 0.8828
+Epoch 3/10
+32/32 [==============================] - 590s 18s/step - loss: 0.3384 - accuracy: 0.8788 - val_loss: 0.4663 - val_accuracy: 0.8564
+Epoch 4/10
+32/32 [==============================] - 586s 18s/step - loss: 0.2850 - accuracy: 0.8971 - val_loss: 0.4628 - val_accuracy: 0.8691
+Epoch 5/10
+32/32 [==============================] - 588s 18s/step - loss: 0.2584 - accuracy: 0.9063 - val_loss: 0.3951 - val_accuracy: 0.8818
+Epoch 6/10
+32/32 [==============================] - 600s 19s/step - loss: 0.2299 - accuracy: 0.9144 - val_loss: 0.4267 - val_accuracy: 0.8779
+Epoch 7/10
+31/32 [============================>.] - ETA: 18s - loss: 0.2050 - accuracy: 0.9249  
+Epoch 00007: ReduceLROnPlateau reducing learning rate to 4.999999873689376e-06.
+32/32 [==============================] - 602s 19s/step - loss: 0.2017 - accuracy: 0.9258 - val_loss: 0.3720 - val_accuracy: 0.8887
+Epoch 8/10
+32/32 [==============================] - 589s 18s/step - loss: 0.1928 - accuracy: 0.9229 - val_loss: 0.3489 - val_accuracy: 0.8955
+Epoch 9/10
+32/32 [==============================] - 589s 18s/step - loss: 0.1758 - accuracy: 0.9359 - val_loss: 0.3524 - val_accuracy: 0.8945
+Epoch 10/10
+32/32 [==============================] - 587s 18s/step - loss: 0.1971 - accuracy: 0.9311 - val_loss: 0.3498 - val_accuracy: 0.8965
+[INFO] evaluating network...
+              precision    recall  f1-score   support
+
+   with_mask       0.97      0.82      0.89       514
+without_mask       0.84      0.98      0.90       517
+
+    accuracy                           0.90      1031
+   macro avg       0.91      0.90      0.90      1031
+weighted avg       0.91      0.90      0.90      1031
+
+[INFO] saving mask detector model...
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+['Without Mask']
+
+
