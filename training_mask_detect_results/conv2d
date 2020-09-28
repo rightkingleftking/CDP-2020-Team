@@ -1,0 +1,40 @@
+input_shape=(BS,224,224,3)
+headModel= Conv2D(filters=16,kernel_size=(5,5),padding='same',input_shape=input_shape[1:])(headModel)
+headModel = MaxPooling2D(pool_size=(5, 5))(headModel)
+headModel = Flatten(name="flatten")(headModel)
+headModel = Dense(128, activation="selu")(headModel)
+headModel = Dense(2, activation="softmax")(headModel)
+
+Epoch 1/10
+32/32 [==============================] - 665s 21s/step - loss: 0.4050 - accuracy: 0.8199 - val_loss: 0.2611 - val_accuracy: 0.9004
+Epoch 2/10
+32/32 [==============================] - 635s 20s/step - loss: 0.1257 - accuracy: 0.9532 - val_loss: 0.2010 - val_accuracy: 0.9277
+Epoch 3/10
+32/32 [==============================] - 663s 21s/step - loss: 0.0957 - accuracy: 0.9632 - val_loss: 0.2097 - val_accuracy: 0.9297
+Epoch 4/10
+32/32 [==============================] - 637s 20s/step - loss: 0.0711 - accuracy: 0.9747 - val_loss: 0.2420 - val_accuracy: 0.9277
+Epoch 5/10
+32/32 [==============================] - 682s 21s/step - loss: 0.0596 - accuracy: 0.9790 - val_loss: 0.1584 - val_accuracy: 0.9541
+Epoch 6/10
+32/32 [==============================] - 795s 25s/step - loss: 0.0626 - accuracy: 0.9790 - val_loss: 0.1752 - val_accuracy: 0.9492
+Epoch 7/10
+32/32 [==============================] - 792s 25s/step - loss: 0.0444 - accuracy: 0.9842 - val_loss: 0.1256 - val_accuracy: 0.9609
+Epoch 8/10
+32/32 [==============================] - 776s 24s/step - loss: 0.0490 - accuracy: 0.9815 - val_loss: 0.1100 - val_accuracy: 0.9600
+Epoch 9/10
+32/32 [==============================] - 763s 24s/step - loss: 0.0418 - accuracy: 0.9865 - val_loss: 0.1153 - val_accuracy: 0.9590
+Epoch 10/10
+32/32 [==============================] - 770s 24s/step - loss: 0.0386 - accuracy: 0.9857 - val_loss: 0.3448 - val_accuracy: 0.9141
+[INFO] evaluating network...
+              precision    recall  f1-score   support
+
+   with_mask       1.00      0.83      0.91       514
+without_mask       0.85      1.00      0.92       517
+
+    accuracy                           0.91      1031
+   macro avg       0.93      0.91      0.91      1031
+weighted avg       0.93      0.91      0.91      1031
+
+[INFO] saving mask detector model...
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+['With Mask']
