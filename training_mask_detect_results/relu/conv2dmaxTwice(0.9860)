@@ -1,0 +1,42 @@
+input_shape=(BS,224,224,3)
+headModel= Conv2D(filters=16,kernel_size=(5,5),padding='same',activation="relu",input_shape=input_shape[1:])(headModel)
+headModel = MaxPooling2D(pool_size=(5, 5),padding='same')(headModel)
+headModel= Conv2D(filters=16,kernel_size=(5,5),padding='same',activation="relu",input_shape=input_shape[1:])(headModel)
+headModel = MaxPooling2D(pool_size=(5, 5),padding='same')(headModel)
+headModel = Flatten(name="flatten")(headModel)
+headModel = Dense(128, activation="relu")(headModel)
+headModel = Dense(2, activation="softmax")(headModel)
+
+Epoch 1/10
+32/32 [==============================] - 775s 24s/step - loss: 0.3482 - accuracy: 0.8763 - val_loss: 0.2833 - val_accuracy: 0.9053
+Epoch 2/10
+32/32 [==============================] - 776s 24s/step - loss: 0.1098 - accuracy: 0.9592 - val_loss: 0.1307 - val_accuracy: 0.9541
+Epoch 3/10
+32/32 [==============================] - 773s 24s/step - loss: 0.0738 - accuracy: 0.9760 - val_loss: 0.1501 - val_accuracy: 0.9531
+Epoch 4/10
+32/32 [==============================] - 762s 24s/step - loss: 0.0639 - accuracy: 0.9777 - val_loss: 0.1281 - val_accuracy: 0.9600
+Epoch 5/10
+32/32 [==============================] - 718s 22s/step - loss: 0.0507 - accuracy: 0.9817 - val_loss: 0.1433 - val_accuracy: 0.9561
+Epoch 6/10
+32/32 [==============================] - 704s 22s/step - loss: 0.0479 - accuracy: 0.9822 - val_loss: 0.1194 - val_accuracy: 0.9609
+Epoch 7/10
+32/32 [==============================] - 702s 22s/step - loss: 0.0384 - accuracy: 0.9860 - val_loss: 0.1345 - val_accuracy: 0.9561
+Epoch 8/10
+32/32 [==============================] - 708s 22s/step - loss: 0.0413 - accuracy: 0.9855 - val_loss: 0.1454 - val_accuracy: 0.9551
+Epoch 9/10
+32/32 [==============================] - 702s 22s/step - loss: 0.0365 - accuracy: 0.9875 - val_loss: 0.2243 - val_accuracy: 0.9385
+Epoch 10/10
+32/32 [==============================] - 720s 22s/step - loss: 0.0357 - accuracy: 0.9860 - val_loss: 0.1259 - val_accuracy: 0.9580
+[INFO] evaluating network...
+              precision    recall  f1-score   support
+
+   with_mask       0.99      0.92      0.96       514
+without_mask       0.93      0.99      0.96       517
+
+    accuracy                           0.96      1031
+   macro avg       0.96      0.96      0.96      1031
+weighted avg       0.96      0.96      0.96      1031
+
+[INFO] saving mask detector model...
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+['Without Mask']
