@@ -1,0 +1,48 @@
+input_shape=(BS,224,224,3)
+headModel= Conv2D(filters=16,kernel_size=(5,5),padding='same',activation="selu",input_shape=input_shape[1:])(headModel)
+headModel = MaxPooling2D(pool_size=(5, 5),padding='same')(headModel)
+headModel= Conv2D(filters=16,kernel_size=(5,5),padding='same',activation="selu",input_shape=input_shape[1:])(headModel)
+headModel = MaxPooling2D(pool_size=(5, 5),padding='same')(headModel)
+headModel = Flatten(name="flatten")(headModel)
+headModel = Dense(128, activation="selu")(headModel)
+headModel = Dense(2, activation="softmax")(headModel)
+
+
+WARNING:tensorflow:sample_weight modes were coerced from
+  ...
+    to  
+  ['...']
+Train for 32 steps, validate on 1031 samples
+Epoch 1/10
+32/32 [==============================] - 667s 21s/step - loss: 0.3383 - accuracy: 0.8613 - val_loss: 0.2225 - val_accuracy: 0.9199
+Epoch 2/10
+32/32 [==============================] - 633s 20s/step - loss: 0.1134 - accuracy: 0.9617 - val_loss: 0.3156 - val_accuracy: 0.9023
+Epoch 3/10
+32/32 [==============================] - 632s 20s/step - loss: 0.0806 - accuracy: 0.9727 - val_loss: 0.1745 - val_accuracy: 0.9473
+Epoch 4/10
+32/32 [==============================] - 624s 20s/step - loss: 0.0626 - accuracy: 0.9767 - val_loss: 0.1290 - val_accuracy: 0.9551
+Epoch 5/10
+32/32 [==============================] - 602s 19s/step - loss: 0.0563 - accuracy: 0.9797 - val_loss: 0.2495 - val_accuracy: 0.9326
+Epoch 6/10
+32/32 [==============================] - 610s 19s/step - loss: 0.0542 - accuracy: 0.9805 - val_loss: 0.2300 - val_accuracy: 0.9346
+Epoch 7/10
+32/32 [==============================] - 601s 19s/step - loss: 0.0450 - accuracy: 0.9840 - val_loss: 0.1023 - val_accuracy: 0.9688
+Epoch 8/10
+32/32 [==============================] - 600s 19s/step - loss: 0.0586 - accuracy: 0.9780 - val_loss: 0.0952 - val_accuracy: 0.9678
+Epoch 9/10
+32/32 [==============================] - 603s 19s/step - loss: 0.0336 - accuracy: 0.9892 - val_loss: 0.1505 - val_accuracy: 0.9590
+Epoch 10/10
+32/32 [==============================] - 599s 19s/step - loss: 0.0374 - accuracy: 0.9872 - val_loss: 0.1288 - val_accuracy: 0.9600
+[INFO] evaluating network...
+              precision    recall  f1-score   support
+
+   with_mask       1.00      0.92      0.96       514
+without_mask       0.93      1.00      0.96       517
+
+    accuracy                           0.96      1031
+   macro avg       0.96      0.96      0.96      1031
+weighted avg       0.96      0.96      0.96      1031
+
+[INFO] saving mask detector model...
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+['With Mask']
