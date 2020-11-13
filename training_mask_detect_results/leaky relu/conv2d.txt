@@ -1,0 +1,31 @@
+Conv2D layer 추가                                                                                                                                                   [INFO] loading images from the dataset...
+WARNING:tensorflow:`input_shape` is undefined or non-square, or `rows` is not in [96, 128, 160, 192, 224]. Weights for input shape (224, 224) will be loaded as the default.
+[INFO] compiling model...
+[INFO] training model...
+Epoch 1/10
+32/32 [==============================] - 204s 6s/step - loss: 0.1692 - accuracy: 0.9379 - val_loss: 0.0493 - val_accuracy: 0.9825
+Epoch 2/10
+32/32 [==============================] - 315s 10s/step - loss: 0.0594 - accuracy: 0.9805 - val_loss: 0.0389 - val_accuracy: 0.9874
+Epoch 3/10
+32/32 [==============================] - 299s 9s/step - loss: 0.0388 - accuracy: 0.9887 - val_loss: 0.0364 - val_accuracy: 0.9884
+Epoch 4/10
+32/32 [==============================] - 285s 9s/step - loss: 0.0343 - accuracy: 0.9890 - val_loss: 0.0335 - val_accuracy: 0.9893
+Epoch 5/10
+32/32 [==============================] - 294s 9s/step - loss: 0.0208 - accuracy: 0.9935 - val_loss: 0.0264 - val_accuracy: 0.9922
+Epoch 6/10
+32/32 [==============================] - 282s 9s/step - loss: 0.0222 - accuracy: 0.9927 - val_loss: 0.0211 - val_accuracy: 0.9942
+Epoch 7/10
+32/32 [==============================] - 284s 9s/step - loss: 0.0272 - accuracy: 0.9900 - val_loss: 0.0239 - val_accuracy: 0.9942
+Epoch 8/10
+32/32 [==============================] - 239s 7s/step - loss: 0.0169 - accuracy: 0.9945 - val_loss: 0.0231 - val_accuracy: 0.9922
+Epoch 9/10
+32/32 [==============================] - 200s 6s/step - loss: 0.0182 - accuracy: 0.9945 - val_loss: 0.0197 - val_accuracy: 0.9942
+Epoch 10/10
+32/32 [==============================] - 196s 6s/step - loss: 0.0135 - accuracy: 0.9960 - val_loss: 0.0201 - val_accuracy: 0.9942
+[INFO] evaluating network...
+              precision    recall  f1-score   support
+   with_mask       1.00      0.99      0.99       514
+without_mask       0.99      1.00      0.99       517
+    accuracy                           0.99      1031
+   macro avg       0.99      0.99      0.99      1031
+weighted avg       0.99      0.99      0.99      1031
