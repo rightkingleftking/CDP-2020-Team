@@ -30,3 +30,5 @@ while(cap.isOpened()):
 # When everything done, release the capture
 cap.release()
 cv2.destroyAllWindows()
+
+테스트 하는중입니다.
