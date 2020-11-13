@@ -1,0 +1,76 @@
+Using TensorFlow backend.
+[INFO] loading images from the dataset...
+2020-10-05 03:48:32.212341: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+[INFO] compiling model...
+[INFO] training model...
+WARNING:tensorflow:sample_weight modes were coerced from
+  ...
+    to
+  ['...']
+Train for 32 steps, validate on 1032 samples
+Epoch 1/40
+2020-10-05 03:48:32.212341: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+2020-10-05 03:48:41.683247: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 77760000 exceeds 10% of system memory.
+2020-10-05 03:48:41.720863: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 205520896 exceeds 10% of system memory.
+2020-10-05 03:48:32.212341: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+2020-10-05 03:48:41.683247: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 77760000 exceeds 10% of system memory.
+2020-10-05 03:48:41.720863: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 205520896 exceeds 10% of system memory.
+2020-10-05 03:48:42.368748: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 205520896 exceeds 10% of system memory.
+2020-10-05 03:48:32.212341: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+2020-10-05 03:48:41.683247: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 77760000 exceeds 10% of system memory.
+2020-10-05 03:48:41.720863: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 205520896 exceeds 10% of system memory.
+2020-10-05 03:48:42.368748: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 205520896 exceeds 10% of system memory.
+2020-10-05 03:48:43.088108: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 102760448 exceeds 10% of system memory.
+2020-10-05 03:48:43.336783: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 616562688 exceeds 10% of system memory.
+32/32 [==============================] - 554s 17s/step - loss: 0.4035 - accuracy: 0.8418 - val_loss: 0.2595 - val_accuracy: 0.8984
+Epoch 2/40
+32/32 [==============================] - 539s 17s/step - loss: 0.1256 - accuracy: 0.9577 - val_loss: 0.3747 - val_accuracy: 0.8896
+Epoch 3/40
+32/32 [==============================] - 536s 17s/step - loss: 0.0814 - accuracy: 0.9727 - val_loss: 0.1006 - val_accuracy: 0.9629
+Epoch 4/40
+32/32 [==============================] - 536s 17s/step - loss: 0.0850 - accuracy: 0.9700 - val_loss: 0.1430 - val_accuracy: 0.9561
+Epoch 5/40
+32/32 [==============================] - 539s 17s/step - loss: 0.0694 - accuracy: 0.9732 - val_loss: 0.1782 - val_accuracy: 0.9473
+Epoch 6/40
+32/32 [==============================] - 536s 17s/step - loss: 0.0528 - accuracy: 0.9825 - val_loss: 0.1744 - val_accuracy: 0.9414
+Epoch 7/40
+32/32 [==============================] - 537s 17s/step - loss: 0.0496 - accuracy: 0.9802 - val_loss: 0.1745 - val_accuracy: 0.9541
+Epoch 8/40
+31/32 [============================>.] - ETA: 16s - loss: 0.0329 - accuracy: 0.9899
+Epoch 00008: ReduceLROnPlateau reducing learning rate to 4.999999873689376e-06.
+32/32 [==============================] - 550s 17s/step - loss: 0.0328 - accuracy: 0.9900 - val_loss: 0.1664 - val_accuracy: 0.9600
+Epoch 9/40
+32/32 [==============================] - 537s 17s/step - loss: 0.0389 - accuracy: 0.9875 - val_loss: 0.1561 - val_accuracy: 0.9609
+Epoch 10/40
+32/32 [==============================] - 535s 17s/step - loss: 0.0399 - accuracy: 0.9885 - val_loss: 0.1694 - val_accuracy: 0.9590
+Epoch 11/40
+32/32 [==============================] - 537s 17s/step - loss: 0.0415 - accuracy: 0.9880 - val_loss: 0.1512 - val_accuracy: 0.9609
+Epoch 12/40
+32/32 [==============================] - 538s 17s/step - loss: 0.0324 - accuracy: 0.9895 - val_loss: 0.1586 - val_accuracy: 0.9609
+Epoch 13/40
+31/32 [============================>.] - ETA: 15s - loss: 0.0436 - accuracy: 0.9873
+Epoch 00013: ReduceLROnPlateau reducing learning rate to 2.499999936844688e-07.
+32/32 [==============================] - 535s 17s/step - loss: 0.0429 - accuracy: 0.9875 - val_loss: 0.1558 - val_accuracy: 0.9609
+Epoch 00013: early stopping
+[INFO] evaluating network...
+              precision    recall  f1-score   support
+   with_mask       1.00      0.92      0.96       515
+without_mask       0.93      1.00      0.96       517
+    accuracy                           0.96      1032
+   macro avg       0.96      0.96      0.96      1032
+weighted avg       0.96      0.96      0.96      1032
+[INFO] saving mask detector model...
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+['With Mask']
+Traceback (most recent call last):
+  File "C:\Users\chs65\OneDrive\Desktop\Training_model_zipped\train_mask_detector.py", line 218, in <module>
+    plt.plot(np.arange(0, N), H.history["loss"], label="train_loss")
+  File "C:\Users\chs65\anaconda3\envs\env_tf\lib\site-packages\matplotlib\pyplot.py", line 2826, in plot
+    **({"data": data} if data is not None else {}), **kwargs)
+  File "C:\Users\chs65\anaconda3\envs\env_tf\lib\site-packages\matplotlib\axes\_axes.py", line 1743, in plot
+    lines = [*self._get_lines(*args, data=data, **kwargs)]
+  File "C:\Users\chs65\anaconda3\envs\env_tf\lib\site-packages\matplotlib\axes\_base.py", line 273, in _call_
+    yield from self._plot_args(this, kwargs)
+  File "C:\Users\chs65\anaconda3\envs\env_tf\lib\site-packages\matplotlib\axes\_base.py", line 399, in _plot_args
+    raise ValueError(f"x and y must have same first dimension, but "
+ValueError: x and y must have same first dimension, but have shapes (40,) and (13,)
