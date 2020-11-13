@@ -1,0 +1,47 @@
+32/32 [==============================] - 531s 17s/step - loss: 1.5436 - acc: 0.5800 - val_loss: 0.7707 - val_acc: 0.7197
+Epoch 2/10
+32/32 [==============================] - 517s 16s/step - loss: 0.6353 - acc: 0.7701 - val_loss: 0.5526 - val_acc: 0.8206
+Epoch 3/10
+32/32 [==============================] - 516s 16s/step - loss: 0.4367 - acc: 0.8417 - val_loss: 0.4187 - val_acc: 0.8681
+Epoch 4/10
+32/32 [==============================] - 518s 16s/step - loss: 0.3490 - acc: 0.8698 - val_loss: 0.4574 - val_acc: 0.8729
+Epoch 5/10
+32/32 [==============================] - 521s 16s/step - loss: 0.2964 - acc: 0.8883 - val_loss: 0.3879 - val_acc: 0.8943
+Epoch 6/10
+32/32 [==============================] - 516s 16s/step - loss: 0.2648 - acc: 0.8951 - val_loss: 0.2866 - val_acc: 0.9108
+Epoch 7/10
+32/32 [==============================] - 519s 16s/step - loss: 0.2303 - acc: 0.9159 - val_loss: 0.2454 - val_acc: 0.9214
+Epoch 8/10
+32/32 [==============================] - 517s 16s/step - loss: 0.2299 - acc: 0.9121 - val_loss: 0.3102 - val_acc: 0.9127
+Epoch 9/10
+32/32 [==============================] - 518s 16s/step - loss: 0.1906 - acc: 0.9289 - val_loss: 0.3053 - val_acc: 0.9185
+Epoch 10/10
+32/32 [==============================] - 519s 16s/step - loss: 0.1828 - acc: 0.9271 - val_loss: 0.4061 - val_acc: 0.8914
+[INFO] evaluating network...
+              precision    recall  f1-score   support
+
+   with_mask       0.99      0.79      0.88       514
+without_mask       0.83      0.99      0.90       517
+
+    accuracy                           0.89      1031
+   macro avg       0.91      0.89      0.89      1031
+weighted avg       0.91      0.89      0.89      1031
+
+[INFO] saving mask detector model...
+WARNING:tensorflow:From C:\Users\database\anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:97: calling GlorotUniform.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From C:\Users\database\anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:97: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From C:\Users\database\anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:97: calling Ones.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+['Without Mask']
+Traceback (most recent call last):
+
+  File "C:\Users\Public\학교\Training_model\train_mask_detector.py", line 200, in <module>
+    plt.plot(np.arange(0, N), H.history["accuracy"], label="train_acc")
+
+KeyError: 'accuracy'
