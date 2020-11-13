@@ -1,0 +1,27 @@
+Epoch 1/10
+32/32 [==============================] - 184s 6s/step - loss: 0.1857 - accuracy: 0.9189 - val_loss: 0.0585 - val_accuracy: 0.9787
+Epoch 2/10
+32/32 [==============================] - 181s 6s/step - loss: 0.0605 - accuracy: 0.9790 - val_loss: 0.0400 - val_accuracy: 0.9884
+Epoch 3/10
+32/32 [==============================] - 174s 5s/step - loss: 0.0430 - accuracy: 0.9860 - val_loss: 0.0411 - val_accuracy: 0.9884
+Epoch 4/10
+32/32 [==============================] - 171s 5s/step - loss: 0.0360 - accuracy: 0.9877 - val_loss: 0.0376 - val_accuracy: 0.9884
+Epoch 5/10
+32/32 [==============================] - 169s 5s/step - loss: 0.0333 - accuracy: 0.9882 - val_loss: 0.0298 - val_accuracy: 0.9922
+Epoch 6/10
+32/32 [==============================] - 178s 6s/step - loss: 0.0357 - accuracy: 0.9897 - val_loss: 0.0375 - val_accuracy: 0.9893
+Epoch 7/10
+32/32 [==============================] - 167s 5s/step - loss: 0.0288 - accuracy: 0.9902 - val_loss: 0.0282 - val_accuracy: 0.9922
+Epoch 8/10
+32/32 [==============================] - 170s 5s/step - loss: 0.0243 - accuracy: 0.9907 - val_loss: 0.0256 - val_accuracy: 0.9922
+Epoch 9/10
+32/32 [==============================] - 170s 5s/step - loss: 0.0311 - accuracy: 0.9897 - val_loss: 0.0335 - val_accuracy: 0.9884
+Epoch 10/10
+32/32 [==============================] - 174s 5s/step - loss: 0.0301 - accuracy: 0.9892 - val_loss: 0.0231 - val_accuracy: 0.9942
+[INFO] evaluating network...
+              precision    recall  f1-score   support
+   with_mask       1.00      0.99      0.99       514
+without_mask       0.99      1.00      0.99       517
+    accuracy                           0.99      1031
+   macro avg       0.99      0.99      0.99      1031
+weighted avg       0.99      0.99      0.99      1031
