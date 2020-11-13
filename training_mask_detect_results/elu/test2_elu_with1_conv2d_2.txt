@@ -1,0 +1,29 @@
+Allocation of 616562688 exceeds 10% of system memory.
+32/32 [==============================] - 564s 18s/step - loss: 0.4000 - acc: 0.8184 - val_loss: 0.2775 - val_acc: 0.9011
+Epoch 2/10
+32/32 [==============================] - 559s 17s/step - loss: 0.1261 - acc: 0.9537 - val_loss: 0.1578 - val_acc: 0.9467
+Epoch 3/10
+32/32 [==============================] - 531s 17s/step - loss: 0.0842 - acc: 0.9722 - val_loss: 0.2880 - val_acc: 0.9195
+Epoch 4/10
+32/32 [==============================] - 503s 16s/step - loss: 0.0712 - acc: 0.9758 - val_loss: 0.2461 - val_acc: 0.9234
+Epoch 5/10
+32/32 [==============================] - 518s 16s/step - loss: 0.0579 - acc: 0.9792 - val_loss: 0.1415 - val_acc: 0.9525
+Epoch 6/10
+32/32 [==============================] - 544s 17s/step - loss: 0.0459 - acc: 0.9858 - val_loss: 0.2256 - val_acc: 0.9331
+Epoch 7/10
+32/32 [==============================] - 504s 16s/step - loss: 0.0508 - acc: 0.9825 - val_loss: 0.1040 - val_acc: 0.9641
+Epoch 8/10
+32/32 [==============================] - 521s 16s/step - loss: 0.0500 - acc: 0.9820 - val_loss: 0.0930 - val_acc: 0.9699
+Epoch 9/10
+32/32 [==============================] - 531s 17s/step - loss: 0.0442 - acc: 0.9856 - val_loss: 0.1735 - val_acc: 0.9389
+Epoch 10/10
+32/32 [==============================] - 516s 16s/step - loss: 0.0296 - acc: 0.9897 - val_loss: 0.1093 - val_acc: 0.9602
+[INFO] evaluating network...
+              precision    recall  f1-score   support
+
+   with_mask       0.99      0.93      0.96       514
+without_mask       0.93      0.99      0.96       517
+
+    accuracy                           0.96      1031
+   macro avg       0.96      0.96      0.96      1031
+weighted avg       0.96      0.96      0.96      1031
