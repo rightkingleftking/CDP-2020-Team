@@ -1,0 +1,31 @@
+Epoch 1/10
+32/32 [==============================] - 567s 18s/step - loss: 0.4533 - acc: 0.7996 - val_loss: 0.2869 - val_acc: 0.8826
+Epoch 2/10
+32/32 [==============================] - 544s 17s/step - loss: 0.1589 - acc: 0.9447 - val_loss: 0.2312 - val_acc: 0.9214
+Epoch 3/10
+32/32 [==============================] - 544s 17s/step - loss: 0.0934 - acc: 0.9679 - val_loss: 0.1566 - val_acc: 0.9457
+Epoch 4/10
+32/32 [==============================] - 559s 17s/step - loss: 0.0830 - acc: 0.9692 - val_loss: 0.0964 - val_acc: 0.9622
+Epoch 5/10
+32/32 [==============================] - 534s 17s/step - loss: 0.0681 - acc: 0.9799 - val_loss: 0.1604 - val_acc: 0.9476
+Epoch 6/10
+32/32 [==============================] - 543s 17s/step - loss: 0.0585 - acc: 0.9795 - val_loss: 0.1322 - val_acc: 0.9534
+Epoch 7/10
+32/32 [==============================] - 558s 17s/step - loss: 0.0466 - acc: 0.9835 - val_loss: 0.1755 - val_acc: 0.9467
+Epoch 8/10
+32/32 [==============================] - 543s 17s/step - loss: 0.0461 - acc: 0.9827 - val_loss: 0.2022 - val_acc: 0.9437
+Epoch 9/10
+31/32 [============================>.] - ETA: 16s - loss: 0.0429 - acc: 0.9844 
+Epoch 00009: ReduceLROnPlateau reducing learning rate to 4.999999873689376e-06.
+32/32 [==============================] - 558s 17s/step - loss: 0.0437 - acc: 0.9841 - val_loss: 0.1510 - val_acc: 0.9525
+Epoch 10/10
+32/32 [==============================] - 529s 17s/step - loss: 0.0337 - acc: 0.9879 - val_loss: 0.1456 - val_acc: 0.9544
+[INFO] evaluating network...
+              precision    recall  f1-score   support
+
+   with_mask       1.00      0.91      0.95       514
+without_mask       0.92      1.00      0.96       517
+
+    accuracy                           0.95      1031
+   macro avg       0.96      0.95      0.95      1031
+weighted avg       0.96      0.95      0.95      1031
