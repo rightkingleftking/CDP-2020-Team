@@ -1,0 +1,29 @@
+32/32 [==============================] - 553s 17s/step - loss: 0.5247 - accuracy: 0.7506 - val_loss: 0.3136 - val_accuracy: 0.9414
+Epoch 2/10
+32/32 [==============================] - 543s 17s/step - loss: 0.1965 - accuracy: 0.9524 - val_loss: 0.2209 - val_accuracy: 0.9180
+Epoch 3/10
+32/32 [==============================] - 555s 17s/step - loss: 0.0905 - accuracy: 0.9692 - val_loss: 0.1727 - val_accuracy: 0.9434
+Epoch 4/10
+32/32 [==============================] - 566s 18s/step - loss: 0.0632 - accuracy: 0.9802 - val_loss: 0.1411 - val_accuracy: 0.9570
+Epoch 5/10
+32/32 [==============================] - 548s 17s/step - loss: 0.0595 - accuracy: 0.9765 - val_loss: 0.2351 - val_accuracy: 0.9336
+Epoch 6/10
+32/32 [==============================] - 547s 17s/step - loss: 0.0505 - accuracy: 0.9832 - val_loss: 0.1893 - val_accuracy: 0.9482
+Epoch 7/10
+32/32 [==============================] - 546s 17s/step - loss: 0.0417 - accuracy: 0.9862 - val_loss: 0.1399 - val_accuracy: 0.9541
+Epoch 8/10
+32/32 [==============================] - 553s 17s/step - loss: 0.0455 - accuracy: 0.9815 - val_loss: 0.1480 - val_accuracy: 0.9561
+Epoch 9/10
+32/32 [==============================] - 548s 17s/step - loss: 0.0372 - accuracy: 0.9892 - val_loss: 0.1644 - val_accuracy: 0.9541
+Epoch 10/10
+32/32 [==============================] - 551s 17s/step - loss: 0.0310 - accuracy: 0.9905 - val_loss: 0.1185 - val_accuracy: 0.9648
+[INFO] evaluating network...
+              precision    recall  f1-score   support
+   with_mask       1.00      0.93      0.96       514
+without_mask       0.94      1.00      0.97       517
+    accuracy                           0.97      1031
+   macro avg       0.97      0.96      0.97      1031
+weighted avg       0.97      0.97      0.97      1031
+[INFO] saving mask detector model...
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+['With Mask']
