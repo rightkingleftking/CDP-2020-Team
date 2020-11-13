@@ -1,0 +1,34 @@
+[INFO] loading images from the dataset...
+[INFO] compiling model...
+[INFO] training model...
+Epoch 1/10
+32/32 [==============================] - 541s 17s/step - loss: 0.2869 - acc: 0.8725 - val_loss: 0.3033 - val_acc: 0.9069
+Epoch 2/10
+32/32 [==============================] - 530s 17s/step - loss: 0.1230 - acc: 0.9534 - val_loss: 0.1688 - val_acc: 0.9428
+Epoch 3/10
+32/32 [==============================] - 537s 17s/step - loss: 0.0964 - acc: 0.9629 - val_loss: 0.1027 - val_acc: 0.9583
+Epoch 4/10
+32/32 [==============================] - 529s 17s/step - loss: 0.0808 - acc: 0.9687 - val_loss: 0.1504 - val_acc: 0.9486
+Epoch 5/10
+32/32 [==============================] - 529s 17s/step - loss: 0.0902 - acc: 0.9679 - val_loss: 0.4518 - val_acc: 0.8904
+Epoch 6/10
+32/32 [==============================] - 527s 16s/step - loss: 0.0850 - acc: 0.9689 - val_loss: 0.1600 - val_acc: 0.9476
+Epoch 7/10
+32/32 [==============================] - 527s 16s/step - loss: 0.0699 - acc: 0.9735 - val_loss: 0.1465 - val_acc: 0.9486
+Epoch 8/10
+31/32 [============================>.] - ETA: 15s - loss: 0.0679 - acc: 0.9754 
+Epoch 00008: ReduceLROnPlateau reducing learning rate to 4.999999873689376e-06.
+32/32 [==============================] - 530s 17s/step - loss: 0.0671 - acc: 0.9755 - val_loss: 0.1670 - val_acc: 0.9437
+Epoch 9/10
+32/32 [==============================] - 540s 17s/step - loss: 0.0559 - acc: 0.9777 - val_loss: 0.1683 - val_acc: 0.9437
+Epoch 10/10
+32/32 [==============================] - 529s 17s/step - loss: 0.0510 - acc: 0.9815 - val_loss: 0.1812 - val_acc: 0.9428
+[INFO] evaluating network...
+              precision    recall  f1-score   support
+
+   with_mask       1.00      0.89      0.94       514
+without_mask       0.90      1.00      0.95       517
+
+    accuracy                           0.94      1031
+   macro avg       0.95      0.94      0.94      1031
+weighted avg       0.95      0.94      0.94      1031
